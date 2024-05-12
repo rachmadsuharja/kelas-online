@@ -1,0 +1,186 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: #822b7e;
+}
+
+header {
+  display: inline;
+}
+
+.main-btn {
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #d268cc;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  background-color: #d268cc;
+  position: fixed;
+  top: 0;
+}
+
+nav a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #f1dfea;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  flex-direction: row;
+  padding: 60px;
+}
+
+.hero .jumbotron {
+}
+
+.hero img {
+  width: 400px;
+}
+
+main {
+  padding: 15px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+#kelas .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#kelas .wrapper .card {
+  padding: 10px;
+  width: 11rem;
+  /* flex-grow: 1; */
+}
+
+#kelas .wrapper .card a {
+  display: grid;
+  text-align: center;
+  width: 100%;
+}
+
+#kelas .wrapper .card img {
+  width: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+figure {
+  display: flex;
+  justify-content: space-between;
+  fot-weight: bold;
+}
+
+aside .wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+aside .wrapper img {
+  width: 8vw;
+  border-radius: 100%;
+}
+
+aside ul {
+  display: flex;
+  padding: 0;
+}
+
+aside ul li {
+  list-style: none;
+  margin: 0.5rem;
+}
+
+aside ul li a {
+  color: #822b7e;
+  display: inline;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  padding: 9px 12px;
+}
+
+footer {
+  padding: 10px;
+  color: white;
+  background-color: #d268cc;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    margin-top: 3rem;
+  }
+  .hero img {
+    width: 300px;
+  }
+  nav ul {
+    justify-content: center;
+  }
+  nav a {
+    font-size: 12px;
+  }
+  main aside {
+    align-self: stretch;
+  }
+}
