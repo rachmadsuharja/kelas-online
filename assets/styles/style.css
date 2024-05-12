@@ -197,6 +197,11 @@ footer {
     text-align: center;
   }
 
+  aside ul {
+    display: flex;
+    justify-content: center;
+  }
+
   aside .wrapper {
     align-items: center;
     justify-content: center;
